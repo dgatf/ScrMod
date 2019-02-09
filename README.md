@@ -9,3 +9,5 @@ Inside the folder SrcMod place the config file and bmp for each model. Use same 
 See example of config file and adjust to your needs
 
 Use indexed 16 color (4 bit) greyscale bmp for X9 and 2 color (1bit) monochome bmp for X7 radios
+
+![Image](../blob/master/images/1.png?raw=true)
