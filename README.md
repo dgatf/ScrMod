@@ -1,3 +1,7 @@
+# Custom model screen for OpenTx
+
+## Description
+
 A telemetry script to combine switches and inputs with custom names and a bitmap. Values can be represented in text or bars
 
 Configuration with a text file for each model
