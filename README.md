@@ -11,3 +11,5 @@ See example of config file and adjust to your needs
 Use indexed 16 color (4 bit) greyscale bmp for X9 and 2 color (1bit) monochome bmp for X7 radios
 
 ![Image](./images/1.png?raw=true)
+![Image](./images/2.png?raw=true)
+![Image](./images/3.png?raw=true)
