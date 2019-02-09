@@ -1,0 +1,81 @@
+<image>
+  posx 64
+  posy 16
+
+<titlefont>
+  size 3
+
+<textfont> 
+  size 2
+
+<switch> 
+  row 1
+  col 1
+  field sf
+  name Thr
+  low Off
+  high On
+
+<switch>
+  row 2
+  col 1
+  field sa
+  name Idle
+  low Off
+  mid Sport
+  high 3D
+
+<switch>
+  row 3
+  col 1
+  field sd
+  name Rate
+  low Low
+  mid Mid
+  high High
+
+<switch>
+  row 4
+  col 1
+  field sb
+  name Gyro
+  low Low
+  mid Mid
+  high High
+
+<value>
+  row 5
+  col 1
+  field tx-voltage
+  name Vtx
+  unit V
+  precision 1
+
+<value> 
+  row 1
+  col 3
+  field Cels
+  name Batt
+  unit V
+  precision 1
+
+<bar>
+  row 2
+  col 3 
+  field RSSI
+  name RSSI
+  unit dB
+  min 40
+  max 100
+
+<value>
+  row 3
+  col 3
+  field timer1
+  name Timer
+
+<value>
+  row 4
+  col 3
+  field clock
+  name Clock

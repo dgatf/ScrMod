@@ -1,0 +1,70 @@
+# field names for inputs in http://downloads-21.open-tx.org/firmware/lua_fields_taranis.txt
+# field names for telemetry values is the name of the sensor (case sensitive)
+# bitmap resource: https://skyraccoon.com/icons
+
+<image>
+  posx 64
+  posy 16
+
+<titlefont>
+  size 3
+
+<textfont> 
+  size 2
+
+<switch> 
+  row 2
+  col 1
+  field sf
+  name Thr
+  low Off
+  high On
+
+<switch>
+  row 3
+  col 1
+  field sd
+  name Rate
+  low Low
+  mid Mid
+  high High
+
+<value>
+  row 4
+  col 1
+  field tx-voltage
+  name Vtx
+  unit V
+  precision 1
+
+<value> 
+  row 2
+  col 3
+  field A2 
+  name Batt
+  unit V
+  precision 1
+
+<bar>
+  row 3
+  col 3
+  field RSSI
+  name RSSI
+  unit dB
+  min 40
+  max 100
+
+<value>
+  row 4
+  col 3
+  field timer1
+  name Timer
+
+<value>
+  row 5
+  col 2
+  field clock
+  name Clock
+
+
+
