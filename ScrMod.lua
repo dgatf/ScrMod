@@ -136,10 +136,8 @@ local function drawBar(data, value)
     lcd.drawText(display[config.radio].colWidth*(data.col-1)+display[config.radio].margin, font[config.textfont.size].pixelheigh*(data.row-1)+2+font[config.titlefont.size].pixelheigh, string.sub(data.name or '',1,6),font[config.textfont.size].size)
   end
   if refresh == 5 or value ~= data.value then
-        if data.value ~= nil then
-          lcd.drawGauge(display[config.radio].colWidth*(data.col-1)+display[config.radio].colWidth/2+display[config.radio].margin,font[config.textfont.size].pixelheigh*(data.row-1)+3+font[config.titlefont.size].pixelheigh, display[config.radio].colWidth/2-3, font[config.textfont.size].pixelheigh-3,data.value-data.min,data.max-data.min)
-        end
-        lcd.drawGauge(display[config.radio].colWidth*(data.col-1)+display[config.radio].colWidth/2+display[config.radio].margin,font[config.textfont.size].pixelheigh*(data.row-1)+3+font[config.titlefont.size].pixelheigh, display[config.radio].colWidth/2-3, font[config.textfont.size].pixelheigh-3,value-data.min,data.max-data.min)
+    lcd.drawFilledRectangle(display[config.radio].colWidth*(data.col-1)+display[config.radio].colWidth/2+display[config.radio].margin, font[config.textfont.size].pixelheigh*(data.row-1)+3+font[config.titlefont.size].pixelheigh, display[config.radio].colWidth/2-2, font[config.textfont.size].pixelheigh-3, ERASE)
+    lcd.drawGauge(display[config.radio].colWidth*(data.col-1)+display[config.radio].colWidth/2+display[config.radio].margin,font[config.textfont.size].pixelheigh*(data.row-1)+3+font[config.titlefont.size].pixelheigh, display[config.radio].colWidth/2-3, font[config.textfont.size].pixelheigh-3,value-data.min,data.max-data.min)
   end
 end
 
